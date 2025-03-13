@@ -1,0 +1,21 @@
+.info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 25px;
+  font-size: 0.8rem;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}

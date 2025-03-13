@@ -2,12 +2,14 @@ import {Component} from '@angular/core';
 import {ICONS_TECHNOLOGIES, IconsValue} from './constants/icons-path';
 import {MatTooltip} from '@angular/material/tooltip';
 import {ProjectsCardsComponent} from './components/projects-cards/projects-cards.component';
+import {ContactInformationComponent} from './components/contact-information/contact-information.component';
 
 @Component({
   selector: 'app-root',
   imports: [
     MatTooltip,
-    ProjectsCardsComponent
+    ProjectsCardsComponent,
+    ContactInformationComponent
   ],
   templateUrl: './app.component.html',
   standalone: true,
