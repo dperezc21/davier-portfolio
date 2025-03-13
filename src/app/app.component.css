@@ -36,3 +36,15 @@
   margin: 5px;
   cursor: pointer;
 }
+
+.h2-title {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
