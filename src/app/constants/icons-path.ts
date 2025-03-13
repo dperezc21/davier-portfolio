@@ -21,12 +21,24 @@ export const ICONS_TECHNOLOGIES: IconsValue[] = [
     path: "/js.png"
   },
   {
+    name: "typescript",
+    path: "/typescript.png"
+  },
+  {
     name: "nodejs",
     path: "/nodejs.png"
   },
   {
+    name: "angularjs",
+    path: "/angularjs.png"
+  },
+  {
     name: "java",
     path: "/java.png"
+  },
+  {
+    name: "spring boot",
+    path: "/spring boot.png"
   },
   {
     name: "python",
@@ -39,5 +51,13 @@ export const ICONS_TECHNOLOGIES: IconsValue[] = [
   {
     name: "postgresql",
     path: "/postgre.png"
+  },
+  {
+    name: "mongodb",
+    path: "/mongodb.png"
+  },
+  {
+    name: "JSON",
+    path: "/json.png"
   },
 ]
