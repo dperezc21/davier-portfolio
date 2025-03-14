@@ -1,9 +1,11 @@
+import {IconsValue} from './icons-path';
 
 export interface Project {
   projectName: string;
   technologies: string[],
   repository: string,
-  link?: string
+  link?: string,
+  technologiesIcons?: IconsValue[]
 }
 
 export const FRONTEND_PROJECTS: Project[] = [
@@ -37,17 +39,17 @@ export const BACKEND_PROJECTS: Project[] = [
   },
   {
     projectName: "expense tracker",
-    technologies: ["nodejs", "typescript", "json"],
+    technologies: ["nodejs", "typescript", "JSON"],
     repository: "https://github.com/dperezc21/expense-tracker",
   },
   {
     projectName: "tack tracker cli",
-    technologies: ["nodejs", "javascript", "json"],
+    technologies: ["nodejs", "javascript", "JSON"],
     repository: "https://github.com/dperezc21/task-tracker-cli",
   },
   {
     projectName: "repost backend",
-    technologies: ["nodejs", "typescript", "mongodb", "json"],
+    technologies: ["nodejs", "typescript", "mongodb", "JSON"],
     repository: "https://github.com/dperezc21/reportBackend",
   },
   {

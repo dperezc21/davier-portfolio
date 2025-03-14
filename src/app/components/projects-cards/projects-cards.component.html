@@ -1,7 +1,14 @@
 <div class="projects">
   @for (project of projects; track project.projectName) {
-    <mat-card class="projects-card">
-      <h5 class="project-title">{{project.projectName}}</h5>
+    <mat-card class="project-card">
+      <a class="link" target="_blank" href="{{project.repository}}">
+        <h5 class="project-title">{{project.projectName}}</h5>
+      </a>
+      <div class="icons">
+        @for(icon of project.technologiesIcons; track icon.name) {
+          <img class="icon" src="{{icon.path}}" alt="{{icon.name}}">
+        }
+      </div>
     </mat-card>
   }
 </div>
