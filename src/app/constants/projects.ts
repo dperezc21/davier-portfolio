@@ -6,7 +6,7 @@ export interface Project {
   link?: string
 }
 
-export const PROJECT_FRONTEND: Project[] = [
+export const FRONTEND_PROJECTS: Project[] = [
   {
     projectName: "moca",
     technologies: ["angularjs", "typescript", "HTML", "css"],
@@ -24,7 +24,7 @@ export const PROJECT_FRONTEND: Project[] = [
   }
 ];
 
-export const PROJECT_BACKEND: Project[] = [
+export const BACKEND_PROJECTS: Project[] = [
   {
     projectName: "cake shop",
     technologies: ["nodejs", "javascript", "mysql"],
@@ -61,7 +61,7 @@ export const PROJECT_BACKEND: Project[] = [
     repository: "https://github.com/dperezc21/franchise",
   },
   {
-    projectName: "product inventory management",
+    projectName: "inventory",
     technologies: ["java", "spring boot", "mysql"],
     repository: "https://github.com/dperezc21/product-inventory-management",
   }

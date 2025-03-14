@@ -1,11 +1,7 @@
 <div class="projects">
-  <mat-card class="projects-card">
-    <h3>Moca</h3>
-  </mat-card>
-  <mat-card class="projects-card">
-    <h3>Forti</h3>
-  </mat-card>
-  <mat-card class="projects-card">
-    <h3>Forti</h3>
-  </mat-card>
+  @for (project of projects; track project.projectName) {
+    <mat-card class="projects-card">
+      <h5 class="project-title">{{project.projectName}}</h5>
+    </mat-card>
+  }
 </div>

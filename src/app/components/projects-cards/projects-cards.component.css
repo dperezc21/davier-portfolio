@@ -12,3 +12,7 @@
   height: 350px;
   margin: 10px;
 }
+
+.project-title {
+  border-bottom: 1px solid;
+}

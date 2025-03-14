@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {MatCard} from '@angular/material/card';
+import {Project} from '../../constants/projects';
+import {MatDivider} from '@angular/material/divider';
 
 @Component({
   selector: 'app-projects-cards',
@@ -11,5 +13,6 @@ import {MatCard} from '@angular/material/card';
   styleUrl: './projects-cards.component.css'
 })
 export class ProjectsCardsComponent {
+  @Input() projects!: Project[];
 
 }
