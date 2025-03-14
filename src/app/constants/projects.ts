@@ -13,6 +13,7 @@ export const FRONTEND_PROJECTS: Project[] = [
     projectName: "moca",
     technologies: ["angularjs", "typescript", "HTML", "css"],
     repository: "https://github.com/dperezc21/moca",
+    link: "https://moca-nu.vercel.app"
   },
   {
     projectName: "forti",
