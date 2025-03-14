@@ -9,6 +9,14 @@
           <img class="icon" src="{{icon.path}}" alt="{{icon.name}}">
         }
       </div>
+      <div class="display-flex-row">
+        <button mat-raised-button class="margin-5">
+          <a target="_blank" class="link" href="{{project.repository}}">repository</a>
+        </button>
+        <button *ngIf="project.link" mat-raised-button class="margin-5">
+          <a target="_blank" class="link" href="{{project.repository}}">page</a>
+        </button>
+      </div>
     </mat-card>
   }
 </div>
