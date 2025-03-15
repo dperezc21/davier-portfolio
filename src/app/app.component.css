@@ -13,16 +13,23 @@
 
 .name {
   font-size: 2rem;
+  font-weight: bold;
+  font-family: "Book Antiqua", serif;
 }
 
 .profile-name {
   font-size: 1.3em;
+  color: #3e3d3d;
+  font-weight: bold;
+  font-family: "Book Antiqua", serif;
 }
 
 .profile {
   display: flex;
   justify-content: space-around;
   margin: 30px;
+  padding: 0 30px;
+  font-family: Calibri, serif;
 }
 
 .icons-technologies {

@@ -1,5 +1,4 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {MatCard} from '@angular/material/card';
 import {Project} from '../../constants/projects';
 import {ICONS_TECHNOLOGIES, IconsValue} from '../../constants/icons-path';
 import {MatButton} from '@angular/material/button';
@@ -8,7 +7,6 @@ import {NgIf} from '@angular/common';
 @Component({
   selector: 'app-projects-cards',
   imports: [
-    MatCard,
     MatButton,
     NgIf
   ],

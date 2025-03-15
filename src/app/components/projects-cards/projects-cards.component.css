@@ -12,6 +12,8 @@
   width: 20%;
   height: 180px;
   margin: 10px;
+  border-radius: 9px;
+  background-color: #cfe6ef;
 }
 
 .project-title {

@@ -1,6 +1,6 @@
 <div class="projects">
   @for (project of projects; track project.projectName) {
-    <mat-card class="project-card">
+    <div class="project-card">
       <a class="link" target="_blank" href="{{project.repository}}">
         <h5 class="project-title">{{project.projectName}}</h5>
       </a>
@@ -17,6 +17,6 @@
           <a target="_blank" class="link" href="{{project.link}}">page</a>
         </button>
       </div>
-    </mat-card>
+    </div>
   }
 </div>
