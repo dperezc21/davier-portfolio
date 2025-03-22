@@ -2,15 +2,17 @@ import {Component} from '@angular/core';
 import {ICONS_TECHNOLOGIES, IconsValue} from './constants/icons-path';
 import {MatTooltip} from '@angular/material/tooltip';
 import {ProjectsCardsComponent} from './components/projects-cards/projects-cards.component';
-import {ContactInformationComponent} from './components/contact-information/contact-information.component';
-import {Project, FRONTEND_PROJECTS, BACKEND_PROJECTS} from './constants/projects';
+import {BACKEND_PROJECTS, FRONTEND_PROJECTS, Project} from './constants/projects';
+import {HeaderComponent} from './components/header/header.component';
+import {RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-root',
   imports: [
     MatTooltip,
     ProjectsCardsComponent,
-    ContactInformationComponent
+    HeaderComponent,
+    RouterOutlet
   ],
   templateUrl: './app.component.html',
   standalone: true,

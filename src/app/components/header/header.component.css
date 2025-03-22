@@ -1,0 +1,26 @@
+
+.list-container {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  background-color: darkgrey;
+}
+
+.list {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0.4rem;
+  width: 80%;
+}
+
+.item-li {
+  list-style: none;
+}
+
+.item {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+}
