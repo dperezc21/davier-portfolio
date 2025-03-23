@@ -1,7 +1,5 @@
 import {Component} from '@angular/core';
 import {ICONS_TECHNOLOGIES, IconsValue} from './constants/icons-path';
-import {MatTooltip} from '@angular/material/tooltip';
-import {ProjectsCardsComponent} from './components/projects-cards/projects-cards.component';
 import {BACKEND_PROJECTS, FRONTEND_PROJECTS, Project} from './constants/projects';
 import {HeaderComponent} from './components/header/header.component';
 import {RouterOutlet} from '@angular/router';
