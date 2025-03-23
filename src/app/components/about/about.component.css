@@ -1,0 +1,35 @@
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50dvh;
+}
+
+.profile-container {
+  display:flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.name {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Book Antiqua", serif;
+}
+
+.profile-name {
+  font-size: 1.3em;
+  color: #3e3d3d;
+  font-weight: bold;
+  font-family: "Book Antiqua", serif;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-around;
+  font-family: Calibri, serif;
+}

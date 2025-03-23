@@ -9,8 +9,8 @@ import {RouterOutlet} from '@angular/router';
 @Component({
   selector: 'app-root',
   imports: [
-    MatTooltip,
-    ProjectsCardsComponent,
+    /*MatTooltip,
+    ProjectsCardsComponent,*/
     HeaderComponent,
     RouterOutlet
   ],
