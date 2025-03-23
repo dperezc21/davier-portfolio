@@ -68,4 +68,9 @@ export const BACKEND_PROJECTS: Project[] = [
     technologies: ["java", "spring boot", "mysql"],
     repository: "https://github.com/dperezc21/product-inventory-management",
   }
-]
+];
+
+export const MAP_PROJECTS: Map<string, Project[]> = new Map([
+  ['frontend', FRONTEND_PROJECTS],
+  ['backend', BACKEND_PROJECTS]
+])

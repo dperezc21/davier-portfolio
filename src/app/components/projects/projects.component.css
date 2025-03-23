@@ -1,0 +1,13 @@
+
+.buttons-item {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.button-projects {
+  background-color: #dddada;
+  color: black;
+  border: none;
+  margin: 0.4em;
+}

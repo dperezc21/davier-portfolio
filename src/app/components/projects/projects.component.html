@@ -1,0 +1,6 @@
+<div class="buttons-item">
+  <button class="button-projects" mat-stroked-button (click)="displayProjects(TAG_BACKEND)">Backend Projects</button>
+  <button class="button-projects" mat-stroked-button (click)="displayProjects(TAG_FRONTEND)">Frontend Projects</button>
+</div>
+
+<app-projects-cards [projects]="projects"></app-projects-cards>
