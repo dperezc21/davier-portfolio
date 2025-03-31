@@ -21,11 +21,15 @@
 
 .item {
   text-decoration: none;
-  color: black;
+  color: #605d5d;
   padding: 1rem;
 }
 
+.item:hover {
+  color: black;
+}
+
 .activated {
-  font-size: 1.2em;
   font-weight: bold;
+  color: #302424;
 }
