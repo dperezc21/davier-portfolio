@@ -3,20 +3,19 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  height: 50dvh;
 }
 
 .profile-container {
   display:flex;
   align-items: flex-start;
   flex-direction: column;
-  margin: 2rem;
+  margin: 5rem 10rem;
 }
 
 .name {
   display: flex;
   justify-content: flex-start;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   font-family: "Book Antiqua", serif;
 }
@@ -24,5 +23,6 @@
 .profile {
   display: flex;
   justify-content: space-around;
-  font-family: Calibri, serif;
+  font-family: Arial, serif;
+  margin-bottom: 25px;
 }
