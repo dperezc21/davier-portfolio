@@ -14,8 +14,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
   flex-direction: row;
 }
 
-.margin-5 {
-  margin: 5px;
+.button-link-repo {
+  margin: 9px;
+  border: none;
 }
 
 .margin-top-85 {

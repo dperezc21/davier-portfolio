@@ -49,7 +49,7 @@ export const BACKEND_PROJECTS: Project[] = [
     repository: "https://github.com/dperezc21/task-tracker-cli",
   },
   {
-    projectName: "repost backend",
+    projectName: "report backend",
     technologies: ["nodejs", "typescript", "mongodb", "JSON"],
     repository: "https://github.com/dperezc21/reportBackend",
   },

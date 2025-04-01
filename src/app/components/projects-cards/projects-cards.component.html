@@ -1,19 +1,17 @@
 <div class="projects">
   @for (project of projects; track project.projectName) {
     <div class="project-card">
-      <a class="link" target="_blank" href="{{project.repository}}">
-        <h5 class="project-title">{{project.projectName}}</h5>
-      </a>
+      <p class="project-title">{{project.projectName}}</p>
       <div class="icons">
         @for(icon of project.technologiesIcons; track icon.name) {
           <img class="icon" src="{{icon.path}}" alt="{{icon.name}}">
         }
       </div>
       <div class="display-flex-row">
-        <button *ngIf="project.repository" mat-raised-button class="margin-5">
+        <button *ngIf="project.repository" mat-stroked-button class="button-link-repo">
           <a target="_blank" class="link" href="{{project.repository}}">repository</a>
         </button>
-        <button *ngIf="project.link" mat-raised-button class="margin-5">
+        <button *ngIf="project.link" mat-stroked-button class="button-link-repo">
           <a target="_blank" class="link" href="{{project.link}}">page</a>
         </button>
       </div>

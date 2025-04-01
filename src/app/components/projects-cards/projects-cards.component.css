@@ -3,23 +3,32 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 0 0 15px 0;
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 20%;
-  height: 180px;
+  width: 25%;
+  height: 200px;
   margin: 10px;
-  border-radius: 9px;
-  background-color: #cfe6ef;
+  border-radius: 15px;
+  background-color: #f1efef;
 }
 
 .project-title {
-  border-bottom: 1px solid;
+  font-family: Calibri, serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.icons {
+  display:flex;
+  flex-direction: row;
 }
 
 .icon {
   margin: 5px;
+  width: 40px;
 }
