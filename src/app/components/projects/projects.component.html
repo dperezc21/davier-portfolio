@@ -1,10 +1,12 @@
-<div class="buttons-item">
-  <button class="button-projects {{classButtonSelected(TAG_BACKEND)}}"
-          mat-stroked-button
-          (click)="displayProjects(TAG_BACKEND)">Backend Projects</button>
-  <button class="button-projects {{classButtonSelected(TAG_FRONTEND)}}"
-          mat-stroked-button
-          (click)="displayProjects(TAG_FRONTEND)">Frontend Projects</button>
-</div>
+<div class="margin-top-85">
+  <div class="buttons-item">
+    <button class="button-projects {{classButtonSelected(TAG_BACKEND)}}"
+            mat-stroked-button
+            (click)="displayProjects(TAG_BACKEND)">Backend Projects</button>
+    <button class="button-projects {{classButtonSelected(TAG_FRONTEND)}}"
+            mat-stroked-button
+            (click)="displayProjects(TAG_FRONTEND)">Frontend Projects</button>
+  </div>
 
-<app-projects-cards [projects]="projects"></app-projects-cards>
+  <app-projects-cards [projects]="projects"></app-projects-cards>
+</div>

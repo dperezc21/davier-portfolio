@@ -4,6 +4,8 @@
   justify-content: space-around;
   background: linear-gradient(to right bottom, #276ea4, white);
   padding: 0 50px;
+  position: fixed;
+  width: 100%;
 }
 
 .header-title {
