@@ -1,8 +1,8 @@
 <div class="buttons-item">
-  <button class="button-projects"
+  <button class="button-projects {{classButtonSelected(TAG_BACKEND)}}"
           mat-stroked-button
           (click)="displayProjects(TAG_BACKEND)">Backend Projects</button>
-  <button class="button-projects"
+  <button class="button-projects {{classButtonSelected(TAG_FRONTEND)}}"
           mat-stroked-button
           (click)="displayProjects(TAG_FRONTEND)">Frontend Projects</button>
 </div>

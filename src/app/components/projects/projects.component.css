@@ -6,8 +6,15 @@
 }
 
 .button-projects {
-  background-color: #dddada;
-  color: black;
+  color: black !important;
   border: none;
   margin: 0.4em;
+}
+
+
+.button_selected {
+  color: #203f57 !important;
+  font-weight: bold;
+  font-size: medium;
+  border-bottom: #393838 solid 1px;
 }
