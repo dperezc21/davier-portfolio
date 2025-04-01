@@ -1,4 +1,10 @@
 <div class="main-container">
   <app-header></app-header>
   <router-outlet></router-outlet>
+
+  <div class="icons-technologies">
+    @for (tech of technologies; track tech.name) {
+      <img class="icon" src="{{tech.path}}" alt="{{tech.name}} icon" matTooltip="{{tech.name}}">
+    }
+  </div>
 </div>
