@@ -26,3 +26,18 @@
   font-family: Arial, serif;
   margin-bottom: 25px;
 }
+
+.icons-technologies {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 5%;
+}
+
+.icon {
+  display: flex;
+  padding: 3px;
+  margin: 6px;
+  cursor: pointer;
+  width: 40px;
+}

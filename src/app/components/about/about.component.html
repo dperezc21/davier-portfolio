@@ -1,6 +1,6 @@
 <div class="about-container">
   <div class="profile-container">
-      <span class="name">Davier Perez Cabrera</span>
+    <span class="name">Davier Perez Cabrera</span>
 
     <p class="profile">
       Desarrollador de Software con sólida experiencia en el desarrollo de soluciones web y aplicaciones <br>
@@ -9,7 +9,11 @@
     </p>
 
     <app-contact-information></app-contact-information>
-  </div>
-  <div>
+
+    <div class="icons-technologies">
+      @for (tech of technologies; track tech.name) {
+        <img class="icon" src="{{tech.path}}" alt="{{tech.name}} icon" matTooltip="{{tech.name}}">
+      }
+    </div>
   </div>
 </div>

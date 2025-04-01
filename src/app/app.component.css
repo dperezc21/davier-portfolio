@@ -3,17 +3,3 @@
   flex-direction: column;
   min-height: 100vh;
 }
-
-.icons-technologies {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.icon {
-  display: flex;
-  padding: 3px;
-  margin: 5px;
-  cursor: pointer;
-  width: 45px;
-}
