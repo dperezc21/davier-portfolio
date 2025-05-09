@@ -10,10 +10,16 @@ export interface Project {
 
 export const FRONTEND_PROJECTS: Project[] = [
   {
+    projectName: "moca landing page",
+    technologies: ["angularjs", "typescript", "HTML", "css"],
+    repository: "",
+    link: "https://moca-landing-page.vercel.app/"
+  },
+  {
     projectName: "moca",
     technologies: ["angularjs", "typescript", "HTML", "css"],
     repository: "https://github.com/dperezc21/moca",
-    link: "https://moca-nu.vercel.app"
+    link: ""
   },
   {
     projectName: "forti",
