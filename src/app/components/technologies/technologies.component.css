@@ -1,0 +1,129 @@
+/* Contenedor tipo tarjeta */
+.tech-container {
+  max-width: 900px;
+  width: 100%;
+  padding: 40px;
+
+  background: rgba(15, 23, 42, 0.7); /* mismo estilo que profile-container */
+  backdrop-filter: blur(12px);
+
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  animation: fadeInUp 0.8s ease;
+  margin-top: 40px; /* separación respecto a la sección anterior */
+}
+
+/* Categoría */
+.tech-category {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Título categoría */
+.category-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+/* Lista de iconos */
+.tech-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 18px;
+}
+
+/* Cada card de tecnología permanece igual */
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 10px;
+  border-radius: 14px;
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  gap: 6px;
+}
+
+/* Glow dinámico */
+.tech-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(56,189,248,0.25), transparent 70%);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* Icono */
+.icon {
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+/* Nombre visible */
+.tech-name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #cbd5f5;
+  text-align: center;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+/* Hover */
+.tech-card:hover {
+  transform: translateY(-6px) scale(1.05);
+  border-color: rgba(56, 189, 248, 0.3);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+.tech-card:hover .icon {
+  transform: scale(1.1);
+}
+
+.tech-card:hover .tech-name {
+  color: #38bdf8;
+}
+
+/* Animación entrada */
+.tech-card {
+  animation: fadeInTech 0.6s ease forwards;
+}
+
+@keyframes fadeInTech {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .tech-list {
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  }
+
+  .icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .category-title {
+    font-size: 1rem;
+  }
+}

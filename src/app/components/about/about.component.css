@@ -1,43 +1,115 @@
+/* Contenedor principal */
 .about-container {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.profile-container {
-  display:flex;
-  align-items: flex-start;
-  flex-direction: column;
-  margin: 5rem 10rem;
-}
-
-.name {
-  display: flex;
-  justify-content: flex-start;
-  font-size: 3rem;
-  font-weight: bold;
-  font-family: "Book Antiqua", serif;
-}
-
-.profile {
-  display: flex;
-  justify-content: space-around;
-  font-family: Arial, serif;
-  margin-bottom: 25px;
-}
-
-.icons-technologies {
-  display: flex;
   justify-content: center;
-  width: 100%;
-  margin: 5%;
+  align-items: center;
+  padding: 40px 20px;
 }
 
-.icon {
-  display: flex;
-  padding: 3px;
-  margin: 6px;
-  cursor: pointer;
-  width: 40px;
+/* Tarjeta principal */
+.profile-container {
+  max-width: 900px;
+  width: 100%;
+  padding: 40px;
+
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(12px);
+
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  animation: fadeInUp 0.8s ease;
+}
+
+/* Nombre */
+.name {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  letter-spacing: 1px;
+}
+
+/* Texto principal */
+.profile {
+  font-size: 1.05rem;
+  line-height: 1.9;
+
+  color: #cbd5f5;
+  max-width: 65ch;
+
+  margin-bottom: 25px;
+
+  font-weight: 400;
+  letter-spacing: 0.3px;
+
+  position: relative;
+}
+
+/* Primera línea destacada */
+.profile::first-line {
+  color: #e2e8f0;
+  font-weight: 500;
+}
+
+/* Línea decorativa sutil */
+.profile::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 5px;
+  height: 80%;
+  width: 3px;
+
+  background: linear-gradient(to bottom, #38bdf8, transparent);
+  border-radius: 10px;
+}
+
+/* Animación suave */
+.profile {
+  animation: fadeInText 1s ease;
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animación entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 25px;
+  }
+
+  .name {
+    font-size: 1.8rem;
+  }
+
+  .profile {
+    font-size: 0.95rem;
+  }
 }

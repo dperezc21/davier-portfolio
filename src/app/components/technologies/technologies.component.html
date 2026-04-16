@@ -1,0 +1,55 @@
+<div class="icons-technologies">
+
+  <!-- Lenguajes de programación -->
+  <div class="tech-category">
+    <h4 class="category-title">Lenguajes de programación</h4>
+    <div class="tech-list">
+      @for (tech of programmingLanguages; track tech.name) {
+        <div class="tech-card">
+          <img class="icon" ngSrc="{{tech.path}}" alt="{{tech.name}} icon" width="40" height="40">
+          <span class="tech-name">{{ tech.name }}</span>
+        </div>
+      }
+    </div>
+  </div>
+
+  <!-- Frameworks -->
+  <div class="tech-category">
+    <h4 class="category-title">Frameworks</h4>
+    <div class="tech-list">
+      @for (tech of frameworks; track tech.name) {
+        <div class="tech-card">
+          <img class="icon" ngSrc="{{tech.path}}" alt="{{tech.name}} icon" width="40" height="40">
+          <span class="tech-name">{{ tech.name }}</span>
+        </div>
+      }
+    </div>
+  </div>
+
+  <!-- Bases de datos -->
+  <div class="tech-category">
+    <h4 class="category-title">Bases de datos</h4>
+    <div class="tech-list">
+      @for (tech of databases; track tech.name) {
+        <div class="tech-card">
+          <img class="icon" ngSrc="{{tech.path}}" alt="{{tech.name}} icon" width="40" height="40">
+          <span class="tech-name">{{ tech.name }}</span>
+        </div>
+      }
+    </div>
+  </div>
+
+  <!-- otros -->
+  <div class="tech-category">
+    <h4 class="category-title">Otras tecnologias</h4>
+    <div class="tech-list">
+      @for (tech of other; track tech.name) {
+        <div class="tech-card">
+          <img class="icon" ngSrc="{{tech.path}}" alt="{{tech.name}} icon" width="40" height="40">
+          <span class="tech-name">{{ tech.name }}</span>
+        </div>
+      }
+    </div>
+  </div>
+
+</div>

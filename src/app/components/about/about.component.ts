@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {ContactInformationComponent} from '../contact-information/contact-information.component';
-import {ICONS_TECHNOLOGIES, IconsValue} from "../../constants/icons-path";
-import {MatTooltip} from '@angular/material/tooltip';
+import {TechnologiesComponent} from '../technologies/technologies.component';
 
 @Component({
   selector: 'app-about',
   imports: [
     ContactInformationComponent,
-    MatTooltip
+    TechnologiesComponent,
   ],
   templateUrl: './about.component.html',
   standalone: true,
@@ -15,5 +14,4 @@ import {MatTooltip} from '@angular/material/tooltip';
 })
 export class AboutComponent {
 
-  protected readonly technologies: IconsValue[] = ICONS_TECHNOLOGIES;
 }
