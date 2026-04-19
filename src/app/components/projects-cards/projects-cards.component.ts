@@ -1,13 +1,11 @@
 import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {Project} from '../../constants/projects';
 import {ICONS_TECHNOLOGIES, IconsValue} from '../../constants/icons-path';
-import {MatButton} from '@angular/material/button';
 import {NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-projects-cards',
   imports: [
-    MatButton,
     NgIf
   ],
   templateUrl: './projects-cards.component.html',

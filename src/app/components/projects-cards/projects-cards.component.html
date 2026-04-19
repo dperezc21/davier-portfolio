@@ -8,12 +8,23 @@
         }
       </div>
       <div class="display-flex-row">
-        <button *ngIf="project.repository" mat-stroked-button class="button-link-repo">
-          <a target="_blank" class="link" href="{{project.repository}}">repository</a>
-        </button>
-        <button *ngIf="project.link" mat-stroked-button class="button-link-repo">
-          <a target="_blank" class="link" href="{{project.link}}">page</a>
-        </button>
+        <a
+          *ngIf="project.repository"
+          class="project-btn repo-btn"
+          target="_blank"
+          [href]="project.repository"
+        >
+          Repository
+        </a>
+
+        <a
+          *ngIf="project.link"
+          class="project-btn page-btn"
+          target="_blank"
+          [href]="project.link"
+        >
+          Live Demo
+        </a>
       </div>
     </div>
   }

@@ -1,34 +1,148 @@
+/* Contenedor general de proyectos */
 .projects {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0 0 15px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  padding: 40px 20px;
 }
 
+/* Card individual */
 .project-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 25%;
-  height: 200px;
-  margin: 10px;
-  border-radius: 15px;
-  background-color: #f1efef;
+  padding: 24px;
+
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(12px);
+
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+
+  transition: all 0.3s ease;
+  animation: fadeInUp 1.6s ease;
 }
 
+/* Hover elegante */
+.project-card:hover {
+  transform: translateY(-6px);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  box-shadow: 0 15px 40px rgba(56, 189, 248, 0.15);
+}
+
+/* Título del proyecto */
 .project-title {
-  font-family: Calibri, serif;
-  font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  letter-spacing: 0.5px;
 }
 
+/* Contenedor de iconos */
 .icons {
-  display:flex;
-  flex-direction: row;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
+/* Iconos tecnologías */
 .icon {
-  margin: 5px;
-  width: 40px;
+  width: 42px;
+  height: 42px;
+  padding: 8px;
+
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.display-flex-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.project-btn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Botón repositorio */
+.repo-btn {
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: #cbd5f5;
+}
+
+.repo-btn:hover {
+  background: rgba(56, 189, 248, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(56, 189, 248, 0.2);
+}
+
+/* Botón demo */
+.page-btn {
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  color: white;
+  border: none;
+}
+
+.page-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(129, 140, 248, 0.35);
+}
+
+.project-btn:focus {
+  outline: none;
+}
+
+.project-btn:focus-visible {
+  outline: 2px solid rgba(56, 189, 248, 0.45);
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+
+/* Animación */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
 }

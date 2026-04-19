@@ -17,15 +17,11 @@ export class ProjectsComponent implements OnInit {
   projects!: Project[];
   TAG_FRONTEND: string = "frontend";
   TAG_BACKEND: string = "backend";
-  tag_selected: string = this.TAG_BACKEND;
+  selectedTag = this.TAG_BACKEND;
 
   displayProjects(tag: string) {
+    this.selectedTag = tag;
     this.projects = MAP_PROJECTS.get(tag) as Project[];
-    this.tag_selected = tag;
-  }
-
-  classButtonSelected(button_selected: string): string {
-    return this.tag_selected == button_selected ? 'button_selected' :  '';
   }
 
   ngOnInit(): void {
