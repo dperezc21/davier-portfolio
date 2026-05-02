@@ -34,6 +34,10 @@ export const DATA_BASE: IconsValue[] = [
   {
     name: "mongodb",
     path: "/mongodb.png"
+  },
+  {
+    name: "dynamodb",
+    path: "/dynamodb.svg"
   }
 ]
 
@@ -49,6 +53,14 @@ export const FRAMEWORKS: IconsValue[] = [
   {
     name: "spring boot",
     path: "/spring boot.png"
+  },
+  {
+    name: "spring security",
+    path: "/spring_security.svg"
+  },
+  {
+    name: "react native",
+    path: "/react-native.svg"
   }
 ]
 
@@ -69,6 +81,10 @@ export const OTHER_TECHNOLOGIES: IconsValue[] = [
     name: "JSON",
     path: "/json.png"
   },
+  {
+    name: "expo",
+    path: "/expo.svg"
+  }
 ]
 
 export const ICONS_TECHNOLOGIES: IconsValue[] = [

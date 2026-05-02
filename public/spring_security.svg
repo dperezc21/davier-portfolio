@@ -1,0 +1,29 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Spring Security Icon">
+  <defs>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6DB33F"/>
+      <stop offset="100%" stop-color="#4CAF50"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shield -->
+  <path d="M128 20 L210 55 V115 C210 175 170 220 128 238 C86 220 46 175 46 115 V55 Z"
+        fill="url(#shieldGradient)"/>
+
+  <!-- Lock body -->
+  <rect x="88" y="110" width="80" height="68" rx="12" fill="white"/>
+
+  <!-- Lock shackle -->
+  <path d="M100 110 V88 C100 72 112 60 128 60 C144 60 156 72 156 88 V110"
+        fill="none" stroke="white" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Keyhole -->
+  <circle cx="128" cy="140" r="8" fill="#4CAF50"/>
+  <path d="M128 148 L122 164 H134 Z" fill="#4CAF50"/>
+
+  <!-- Spring leaf accent -->
+  <path d="M180 180 C205 165 220 185 212 210 C205 232 180 240 160 228 C142 216 148 192 180 180 Z"
+        fill="#6DB33F"/>
+  <path d="M165 220 C185 210 198 198 208 184"
+        fill="none" stroke="white" stroke-width="4" stroke-linecap="round"/>
+</svg>

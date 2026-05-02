@@ -13,24 +13,26 @@ export const FRONTEND_PROJECTS: Project[] = [
     projectName: "moca landing page",
     technologies: ["angularjs", "typescript", "HTML", "css"],
     repository: "",
-    link: "https://moca-landing-page.vercel.app/"
+    link: "https://moca-landing-page-f8fa.vercel.app/"
   },
   {
     projectName: "moca",
     technologies: ["angularjs", "typescript", "HTML", "css"],
-    repository: "https://github.com/dperezc21/moca",
+    repository: "",
     link: ""
   },
   {
-    projectName: "forti",
+    projectName: "Sistema de gestion de farmacia",
     technologies: ["angularjs", "typescript", "HTML", "css"],
-    repository: "https://github.com/dperezc21/forti",
+    repository: "https://github.com/dperezc21/pharmacy-app",
+    link: ""
   },
   {
-    projectName: "product inventory",
-    technologies: ["angularjs", "typescript", "HTML", "css"],
-    repository: "https://github.com/dperezc21/product-inventory",
-  }
+    projectName: "peluqueria",
+    technologies: ["react native", "expo", "typescript", "HTML", "css"],
+    repository: "",
+    link: ""
+  },
 ];
 
 export const BACKEND_PROJECTS: Project[] = [
@@ -38,11 +40,6 @@ export const BACKEND_PROJECTS: Project[] = [
     projectName: "cake shop",
     technologies: ["nodejs", "javascript", "mysql"],
     repository: "https://github.com/dperezc21/cake-shop-backend",
-  },
-  {
-    projectName: "sequelize db model",
-    technologies: ["nodejs", "typescript", "mysql"],
-    repository: "https://github.com/dperezc21/sequelize-db-model",
   },
   {
     projectName: "expense tracker",
@@ -55,24 +52,14 @@ export const BACKEND_PROJECTS: Project[] = [
     repository: "https://github.com/dperezc21/task-tracker-cli",
   },
   {
-    projectName: "report backend",
-    technologies: ["nodejs", "typescript", "mongodb", "JSON"],
-    repository: "https://github.com/dperezc21/reportBackend",
+    projectName: "pharmacy service",
+    technologies: ["java", "spring boot", "mysql", "spring security"],
+    repository: "https://github.com/dperezc21/pharmacy-service",
   },
   {
-    projectName: "bankd",
-    technologies: ["java", "spring boot", "mysql"],
-    repository: "https://github.com/dperezc21/bankd",
-  },
-  {
-    projectName: "franchise",
-    technologies: ["java", "spring boot", "mysql"],
-    repository: "https://github.com/dperezc21/franchise",
-  },
-  {
-    projectName: "inventory",
-    technologies: ["java", "spring boot", "mysql"],
-    repository: "https://github.com/dperezc21/product-inventory-management",
+    projectName: "Quick Response",
+    technologies: ["java", "spring boot"],
+    repository: "https://github.com/dperezc21/quick-response",
   }
 ];
 

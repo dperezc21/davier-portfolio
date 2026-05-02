@@ -1,0 +1,42 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DynamoDB style SVG icon">
+  <defs>
+    <linearGradient id="blueFront" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2F80ED"/>
+      <stop offset="100%" stop-color="#1B4F9C"/>
+    </linearGradient>
+    <linearGradient id="blueSide" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#163B75"/>
+      <stop offset="100%" stop-color="#0F2B57"/>
+    </linearGradient>
+    <linearGradient id="blueLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5DA9FF"/>
+      <stop offset="100%" stop-color="#2F80ED"/>
+    </linearGradient>
+  </defs>
+
+  <!-- top layer -->
+  <g>
+    <polygon points="70,52 98,36 158,36 186,52 158,68 98,68" fill="url(#blueFront)"/>
+    <polygon points="70,52 98,36 98,68 70,84" fill="url(#blueSide)"/>
+    <polygon points="158,36 186,52 186,84 158,68" fill="url(#blueLight)"/>
+    <polygon points="70,84 98,68 158,68 186,84 158,96 98,96" fill="#123A73"/>
+  </g>
+
+  <!-- middle layer -->
+  <g>
+    <polygon points="70,104 98,92 158,92 186,104 158,118 98,118" fill="url(#blueFront)"/>
+    <polygon points="70,104 98,92 98,118 70,132" fill="url(#blueSide)"/>
+    <polygon points="158,92 186,104 186,132 158,118" fill="url(#blueLight)"/>
+    <polygon points="70,132 98,118 158,118 186,132 158,144 98,144" fill="#123A73"/>
+  </g>
+
+  <!-- bottom layer -->
+  <g>
+    <polygon points="70,152 98,140 158,140 186,152 158,166 98,166" fill="url(#blueFront)"/>
+    <polygon points="70,152 98,140 98,166 70,180" fill="url(#blueSide)"/>
+    <polygon points="158,140 186,152 186,180 158,166" fill="url(#blueLight)"/>
+    <polygon points="70,180 98,166 158,166 186,180 158,196 98,196" fill="url(#blueFront)"/>
+    <polygon points="70,180 98,166 98,196 70,212" fill="url(#blueSide)"/>
+    <polygon points="158,166 186,180 186,212 158,196" fill="url(#blueLight)"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<!-- Expo Logo White Version (larger, better proportions) -->
+<svg width="400" height="160" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Symbol (scaled slightly larger) -->
+  <path d="M30 80 L55 35 L80 80" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Text: Expo (bigger and better centered) -->
+  <text x="100" y="85" font-family="Arial, Helvetica, sans-serif" font-size="56" fill="#FFFFFF" font-weight="600">
+    Expo
+  </text>
+</svg>
