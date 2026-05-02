@@ -1,12 +1,13 @@
 import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {Project} from '../../constants/projects';
 import {ICONS_TECHNOLOGIES, IconsValue} from '../../constants/icons-path';
-import {NgIf} from '@angular/common';
+import {NgIf, NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-projects-cards',
   imports: [
-    NgIf
+    NgIf,
+    NgOptimizedImage
   ],
   templateUrl: './projects-cards.component.html',
   standalone: true,

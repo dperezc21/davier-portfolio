@@ -1,0 +1,17 @@
+<!-- JWT Text Logo SVG -->
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="256" height="256" rx="40" fill="#111111"/>
+
+  <!-- JWT Text -->
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="96"
+        font-weight="700"
+        fill="#FFFFFF">
+    JWT
+  </text>
+
+  <!-- Accent line -->
+  <rect x="56" y="180" width="144" height="6" rx="3" fill="#E535AB"/>
+</svg>

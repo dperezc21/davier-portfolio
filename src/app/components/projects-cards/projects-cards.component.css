@@ -42,6 +42,21 @@
   letter-spacing: 0.5px;
 }
 
+.project-description {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #151515;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border-left: 2px solid #3b82f6; /* azul moderno */
+  margin-top: 12px;
+  transition: all 0.3s ease;
+}
+
+.project-description:hover {
+  transform: translateY(-2px);
+}
+
 /* Contenedor de iconos */
 .icons {
   display: flex;
@@ -52,8 +67,8 @@
 
 /* Iconos tecnologías */
 .icon {
-  width: 42px;
-  height: 42px;
+  width: 30px;
+  height: 30px;
   padding: 8px;
 
   background: rgba(255, 255, 255, 0.04);

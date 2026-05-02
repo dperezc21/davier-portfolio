@@ -4,20 +4,20 @@
       mat-stroked-button
       disableRipple
       class="button-projects"
-      [class.active]="selectedTag === TAG_BACKEND"
-      (click)="displayProjects(TAG_BACKEND)"
+      [class.active]="selectedTag === TAG_FRONTEND"
+      (click)="displayProjects(TAG_FRONTEND)"
     >
-      Proyectos Backend
+      Proyectos Frontend
     </button>
 
     <button
       mat-stroked-button
       disableRipple
       class="button-projects"
-      [class.active]="selectedTag === TAG_FRONTEND"
-      (click)="displayProjects(TAG_FRONTEND)"
+      [class.active]="selectedTag === TAG_BACKEND"
+      (click)="displayProjects(TAG_BACKEND)"
     >
-      Proyectos Frontend
+      Proyectos Backend
     </button>
   </div>
   <app-projects-cards [projects]="projects"></app-projects-cards>

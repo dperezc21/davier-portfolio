@@ -25,6 +25,6 @@ export class ProjectsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.displayProjects(this.TAG_BACKEND);
+    this.displayProjects(this.TAG_FRONTEND);
   }
 }

@@ -84,6 +84,10 @@ export const OTHER_TECHNOLOGIES: IconsValue[] = [
   {
     name: "expo",
     path: "/expo.svg"
+  },
+  {
+    name: "Json Web Token",
+    path: "/jwt.svg"
   }
 ]
 
