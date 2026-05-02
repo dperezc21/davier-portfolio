@@ -6,7 +6,8 @@ export interface Project {
   repository: string,
   link?: string,
   technologiesIcons?: IconsValue[],
-  description?: string
+  description?: string,
+  image?: string,
 }
 
 export const FRONTEND_PROJECTS: Project[] = [
@@ -15,7 +16,8 @@ export const FRONTEND_PROJECTS: Project[] = [
     technologies: ["angularjs", "typescript", "HTML", "css"],
     repository: "",
     link: "https://moca-landing-page-f8fa.vercel.app/",
-    description: "Pagina Web que muestra los productos que ofrece la resposteria moca, con la intencion de dar a conocer el negocio y sus productos"
+    description: "Pagina Web que muestra los productos que ofrece la resposteria moca, con la intencion de dar a conocer el negocio y sus productos",
+    image: "front-end/landing-page-moca.png"
   },
   /*{
     projectName: "moca",
@@ -29,14 +31,16 @@ export const FRONTEND_PROJECTS: Project[] = [
     technologies: ["angularjs", "typescript", "HTML", "css"],
     repository: "https://github.com/dperezc21/pharmacy-app",
     link: "",
-    description: "Aplicacion de escritorio para manejar la gestion de productos, control de inventarios de una farmacia"
+    description: "Aplicacion de escritorio para manejar la gestion de productos, control de inventarios de una farmacia",
+    image: "front-end/pharmacy.png"
   },
   {
     projectName: "peluqueria",
     technologies: ["react native", "expo", "typescript", "HTML", "css"],
     repository: "",
     link: "",
-    description: "App movil para tener manejo de las ganancias y forma de pago de los servicios ofrecidos en una peluqueria"
+    description: "App movil para tener manejo de las ganancias y forma de pago de los servicios ofrecidos en una peluqueria",
+    image: "front-end/barber-shop.png"
   },
 ];
 
@@ -69,7 +73,8 @@ export const BACKEND_PROJECTS: Project[] = [
     projectName: "Servicio de QR",
     technologies: ["java", "spring boot"],
     repository: "https://github.com/dperezc21/quick-response",
-    description: "Servicio util para generar QR, a partir de un texto"
+    description: "Servicio util para generar QR, a partir de un texto",
+    image: "/back-end/qr.png"
   }
 ];
 
