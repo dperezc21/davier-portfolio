@@ -35,10 +35,9 @@ export const FRONTEND_PROJECTS: Project[] = [
     image: "front-end/pharmacy.png"
   },
   {
-    projectName: "peluqueria",
+    projectName: "the last kings - barber shop",
     technologies: ["react native", "expo", "typescript", "HTML", "css"],
-    repository: "",
-    link: "",
+    repository: "https://github.com/dperezc21/the-kings-app",
     description: "App movil para tener manejo de las ganancias y forma de pago de los servicios ofrecidos en una peluqueria",
     image: "front-end/barber-shop.png"
   },
